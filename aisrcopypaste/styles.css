@@ -1,0 +1,83 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.backgrounddiv {
+    height: 100vh;
+    background-image: url(./resources/airfield.jpeg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+}
+
+.formcontainer {
+    font-size: 1vw;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 2vw;
+    margin-top: 20vh;
+    padding: 2vw;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+
+.forminput {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.fpinput {
+    width: 20vw;
+    height: 5vh;
+}
+
+#fpinputdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+
+.submit {
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6vw;
+    height: 3vh;
+}
+
+.opwrap {
+    display: flex;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    background: #d3d6db;
+    padding: 0.25vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: 1vw;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.outputtext {
+    transform: scale(0);
+    width: 0px;
+}
+
+.copyicon {
+    display: flex;
+    align-self: flex-start;
+    justify-self: end;
+    width: 0.75vw;
+    opacity: 0.4;
+}
