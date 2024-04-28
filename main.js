@@ -35,7 +35,7 @@ function generate() {
 }
 
 function buildoutput(output) {
-    //fpinput.value = '';
+    fpinput.value = '';
     for (var i = 0; i < output.length; i++) {
         outputdiv.innerHTML += `<div class="opwrap" id="div${i}">
         <textarea rows="2" class="outputtext" id="opdiv${i}">${output[i]}</textarea>
