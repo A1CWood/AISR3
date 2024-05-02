@@ -18,7 +18,8 @@ function generate() {
     var output = [];
 
     if(isNaN(callcount)){
-         callcount= split[2].substr(split[2].length - 1);
+         callcount= split[2].substr(split[2].length - 1)
+         precall = split[2].substr(0, split[2].length - 1);
     }
     for (var i = 0; i < outputq - 1; i++) {
         tencount++;
