@@ -17,6 +17,9 @@ function generate() {
     var iff = split[4];
     var output = [];
 
+    if(isNaN(callcount)){
+         callcount= split[2].substr(split[2].length - 1);
+    }
     for (var i = 0; i < outputq - 1; i++) {
         tencount++;
         if(tencount<10){
