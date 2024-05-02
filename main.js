@@ -40,7 +40,9 @@ function generate() {
         split[2] = precall + callcount;
         split[4] = iff
         output[i] = split.join(' ');
-        callcount=Number(callcount);
+        if(callcount<10){
+        callcount=callcount.substr(1);
+        }
     }
     buildoutput(output);
 }
