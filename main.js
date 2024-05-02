@@ -22,7 +22,13 @@ function generate() {
         if(tencount<10){
         tencount='0'+tencount;
         }
-        callcount++;
+        if(isNaN(callcount){
+         var callcountlet=callcount.substr(0, 1);
+        callcount=callcount.substr(1,1);
+        }
+        else{
+            callcount++
+        };
         if (String(iff).slice(-1) == 7) {
             iff = iff + 3
         }
