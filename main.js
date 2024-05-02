@@ -33,9 +33,6 @@ function generate() {
         else {
             iff++
         }
-        if(callcount.length == 1){
-        callcount='0'+callcount;
-        }
         split[0] = preten + tencount;
         split[2] = precall + callcount;
         split[4] = iff
