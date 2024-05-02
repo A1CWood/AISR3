@@ -17,10 +17,7 @@ function generate() {
     var iff = split[4];
     var output = [];
 
-    if(!typeof callcount === 'number')){
-         callcount= split[2].substr(split[2].length - 1)
-         precall = split[2].substr(0, split[2].length - 1);
-    }
+    
     for (var i = 0; i < outputq - 1; i++) {
         tencount++;
         if(tencount<10){
