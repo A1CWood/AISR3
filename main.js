@@ -23,8 +23,8 @@ function generate() {
         tencount='0'+tencount;
         }
         if(isNaN(callcount){
-         var callcountlet=callcount.substr(0, 1);
-        callcount=callcount.substr(1,1);
+         callcount= split[2].substr(split[2].length - 1);
+          callcount++
         }
         else{
             callcount++
