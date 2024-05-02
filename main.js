@@ -22,7 +22,7 @@ function generate() {
         if(tencount<10){
         tencount='0'+tencount;
         }
-        if(isNaN(callcount){
+        if(isNaN(callcount)){
          callcount= split[2].substr(split[2].length - 1);
           callcount++
         }
