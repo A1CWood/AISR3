@@ -24,9 +24,6 @@ function generate() {
     
     for (var i = 0; i < outputq - 1; i++) {
         tencount++;
-        if(tencount<10){
-        tencount='0'+tencount;
-        }
        
         if (String(iff).slice(-1) == 7) {
             iff = iff + 3
