@@ -10,16 +10,29 @@ function generate() {
     var input = fpinput.value;
     var outputq = batch.value;
     var split = input.split(" ");
-    var tencount = split[0].substr(split[0].length - 1);
-    var preten = split[0].substr(0, split[0].length - 1)
+    var tencount = split[0].substr(split[0].length - 2);
+    var preten = split[0].substr(0, split[0].length - 2)
     var callcount = split[2].substr(split[2].length - 2);
     var precall = split[2].substr(0, split[2].length - 2);
     var iff = split[4];
     var output = [];
+    var noZ = false;
+
+    if (isNaN(callcount)) {
+        callcount = split[2].substr(split[2].length - 1);
+        precall = split[2].substr(0, split[2].length - 1);
+        noZ = true;
+    }
 
     for (var i = 0; i < outputq - 1; i++) {
         tencount++;
+        if (tencount < 10) {
+            tencount = '0' + tencount
+        }
         callcount++;
+        if (!noZ) {
+            callcount = '0' + callcount
+        }
         if (String(iff).slice(-1) == 7) {
             iff = iff + 3
         }
