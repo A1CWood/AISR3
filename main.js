@@ -18,6 +18,7 @@ function generate() {
     var output = [];
     var noZ = false;
 
+
     if (isNaN(callcount)) {
         callcount = split[2].substr(split[2].length - 1);
         precall = split[2].substr(0, split[2].length - 1);
